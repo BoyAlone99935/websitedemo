@@ -1,0 +1,230 @@
+:root {
+    --background : #031A09;
+    --primary-color : #316C40;
+    --secondary-color : #294E28;
+    --accent-color : #E2F87B;
+    --container : #FDFFF6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  align-items: center;
+  padding: 5px;
+  
+
+}
+.container {
+  background-color: var(--primary-color);
+  width: 90%;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font: inherit;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--accent-color);
+}
+ input[type = "radio"]:checked ~ label {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.question {
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--background);
+  transition: border 0.3s ease;
+}
+.question:hover {
+  border: 2px solid var(--accent-color);
+}
+label {
+  margin-left: 15px;
+  font-family: arial;
+  font-style: bold;
+}
+ h3 {
+  color: var(--container);
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .Time {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 50px;
+  right: 70px;
+  font-weight: bold;
+ }
+ .Start {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+ }
+ .Start:hover {
+  background-color: #01210a;
+ }
+ .Start:active {
+  background-color: #316C40;
+ }
+ 
+ .hide {
+  display: none;
+ }
+ .container2 {
+  background-color: var(--secondary-color);
+  width: 90%;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+  display: block;
+ }
+ .submit {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+ }
+
+ .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  color: white;
+  padding: 60px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--background);
+  
+}
+.modal-content p {
+  margin-bottom: 10px;
+}
+.modal-content button {
+  padding: 15px;
+  margin: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal-content button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+
+ 
+
+/* Time's Up Modal */
+.timeup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:   rgba(0, 0, 0, 0.5); /* Dark overlay */;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it appears above all content */
+}
+
+.time-up-content {
+  color: white;
+  padding: 60px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--background);
+}
+.time-up-content p {
+  margin-bottom: 10px;
+}
+.view-score {
+  padding: 15px;
+  margin: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-score:hover {
+  background-color: var(--secondary-color);
+}
+
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+@media  (max-width: 500px) {
+  .Time {
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .modal-content {
+    width: 60%;
+  }
+}

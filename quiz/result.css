@@ -1,0 +1,89 @@
+:root {
+  --background : #031A09;
+  --primary-color : #316C40;
+  --secondary-color : #294E28;
+  --accent-color : #E2F87B;
+  --container : #FDFFF6;
+}
+body {
+  background-color: var(--background);
+}
+.result-page {
+  text-align: center;
+  margin: 20px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.result-box {
+  background: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 180px;
+  border: 2px solid var(--accent-color);
+}
+
+.result-box p {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.result-message h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.result-chart {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+}
+h3  {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#performance-text {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+.never {
+  color: var(--accent-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+@media  (max-width: 500px) {
+  .never {
+    font-size: 20px;
+  }
+  .result-box {
+    width: 150px;
+  }
+  .result-box p {
+    font-size: 30px;
+  }
+  .result-box h2 {
+    font-size: 20px;
+  }
+}
